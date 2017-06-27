@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>OPPO</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+    <style id="rwdlink">
+      *{
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        list-style: none;
+      }
+      .toubu .container-fluid .container .navbar-header button{
+        float: left;
+      }
+    	.top_bar{
+        height: 28px;
+        background: #009872;
+        color: #fff;
+      }
+    .top_bar .row div{height:28px;border-left:1px solid #fff;line-height: 28px;}
+    .top_bar .row :first-child{border:none;}
+    
+
+    .navbars{border-radius: 0;margin-bottom: 0;}
+
+    .lunbo>.tubox>div>img{
+      margin: auto;
+    }
+    .shouhou>.container>.row>.col-xs-12>.rexian{
+      text-align: center;
+    }
+
+    .shouhou>.container>.row>.jixing>ul li{
+        margin-top: 10px;
+        }
+    .shouhou>.container>.row>.jixing>.rexian .haoma{
+      font-size: 30px;
+    }
+    .shouhou>.container>.row>.jixing>.rexian .rex{
+      font-size: 18px;
+    }
+    .dibu{
+      padding-top: 30px;
+      padding-bottom: 30px;
+      border-top: 1px solid #000;
+    }
+    .backtop{
+      position: fixed;
+      right: 40px;
+      bottom: 40px;
+      background: rgba(192,192,192,0.5);
+      width: 30px;
+      height: 30px;
+      display: none;
+    }
+    .backtop img{
+      width: 30px;
+      height: 30px;
+    }
+
+
+    /*1170以上大屏电脑*/
+    @media all and (min-width:1170px){
+        .navbars{
+          background:#e7e7e7;
+            height: 78px;
+        }
+        .navbars .container{
+              padding-top: 10px;
+        }
+        .san{
+          margin-top: 5px;
+        }
+        .shouhou{
+          margin-top: 50px;
+        }
+        .toubu .container-fluid{
+        background: url(image/logo.png) no-repeat 50px 20px;
+      }
+      .toubu .container-fluid .container .navbar-header .navbar-brand{
+        display: none;
+      }
+      .toubu .container-fluid .container .wode{
+        display: none;
+      }
+
+    }
+    /*中屏电脑*/
+   @media all and (min-width:970px) and (max-width: 1169px){
+        .san{
+          margin-top: 5px;
+        }
+        .shouhou{
+          margin-top: 40px;
+        }
+        .toubu .container-fluid{
+        background: url(image/logo.png) no-repeat 50px 10px;
+      }
+      .toubu .container-fluid .container .navbar-header .navbar-brand{
+        display: none;
+      }
+      .toubu .container-fluid .container .wode{
+        display: none;
+      }
+    }
+    
+    /*平板设备*/
+       @media all and (min-width:750px) and (max-width: 969px){
+        .san{
+          margin-top: 5px;
+        }
+        .shouhou{
+          margin-top: 40px;
+        }
+        .dibu>.container>.row>.guanzhu{
+          margin-top: 10px;
+        }
+        .toubu .container-fluid{
+        background: url(image/logo.png) no-repeat 50px 10px;
+      }
+      .toubu .container-fluid .container .navbar-header .navbar-brand{
+        display: none;
+      }
+      .toubu .container-fluid .container .wode{
+        display: none;
+      }
+    }
+        /*移动设备*/
+       @media all and (max-width: 749px){
+        .san>.container>.row>.santu{
+          margin-top: 5px;
+        }
+        .dibu>.container>.row>.guanzhu{
+          margin-top: 10px;
+        }
+        .shouhou>.container>.row>.jixing>.rexian>.tu{
+          float: right;
+        }
+        .toubu .container-fluid{
+        background: url(image/logo.png) no-repeat center 10px;
+      }
+      .toubu .container-fluid .container .navbar-header .navbar-brand{
+        padding: 0 15px;
+        float: right;
+      }
+      .toubu .container-fluid .container .navbar-header .navbar-brand img{
+        height: 40px;
+        margin-top: 5px;
+      }
+      .toubu .container-fluid .container{
+        position: relative;
+      }
+      .toubu .container-fluid .container .wode{
+        position: absolute;
+        top: 50px;
+        right: 0;
+        z-index: 99;
+        background: #fff;
+        border: 1px solid green;
+        display: none;
+      }
+      .toubu .container-fluid .container .wode ul{
+        margin-bottom: 0;
+      }
+      .toubu .container-fluid .container .wode ul li{
+        padding: 15px;
+        color: green;
+        font-size: 16px;
+        border-top: 1px solid green;
+        text-align: center;
+      }
+    }
+
+    </style>
+  </head>
+  <body>
+
+	<div class="container-fluid top_bar hidden-md hidden-sm hidden-xs">
+		<div class="container">
+			<div class="row text-center">
+				
+				<div class="col-lg-9"></div>
+				<div class="col-lg-1">登陆</div>
+				<div class="col-lg-1">注册</div>
+				<div class="col-lg-1">Global</div>
+
+			</div>
+		</div>
+	</div>
+
+
+  <!-- 导航开始 -->
+
+  <nav class="navbar navbar-default navbars toubu">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+        <img src="image/icon-menu-user.png" alt="">
+      </a>
+    </div>
+
+    <div class="wode">
+        <ul>
+          <li>我的订单</li>
+          <li>配送地址</li>
+          <li>优惠券</li>
+          <li>账户信息</li>
+          <li>购物车</li>
+          <li>登陆</li>
+        </ul>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+
+
+ 
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">首页</a></li>
+        <li><a href="#">产品</a></li>
+        <li><a href="#">商品</a></li>
+        <li><a href="#">体验店</a></li>
+        <li><a href="#">服务</a></li>
+        <li><a href="#">ColorOS</a></li>
+        <li><a href="#">社区</a></li>
+      </ul>
+
+
+    </div>
+    </div>
+  </div>
+</nav>
+<!-- 导航结束 -->
+
+<!-- 轮播开始 -->
+
+<div id="carousel-example-generic" class="carousel slide lunbo" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner tubox" role="listbox">
+
+    <div class="item tu1">
+      <img src="image/2.jpg" alt="" class="img-responsive">
+    </div>
+
+    <div class="item active tu2">
+      <img src="image/3.jpg" alt="" class="img-responsive">
+    </div>
+
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic
+" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic
+" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<!-- 轮播结束 -->
+
+  <div class="container-fluid san">
+      <div class="row">
+        
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 santu">
+          <img class="img-responsive" src="image/1.jpg" alt="">
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 santu">
+          <img class="img-responsive" src="image/1.jpg" alt="">
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 santu">
+          <img class="img-responsive" src="image/1.jpg" alt="">
+        </div>
+
+      </div>
+  </div>
+
+  <div class="container-fluid shouhou">
+    <div class="container">
+      <div class="row">
+        
+        <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs jixing">
+            <ul>
+                <li>推荐机型</li>
+                <li>R9s</li>
+                <li>R9s</li>
+                <li>R9s</li>
+                <li>R9s</li>
+            </ul>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs jixing">
+            <ul>
+                <li>推荐机型</li>
+                <li>R9s</li>
+                <li>R9s</li>
+                <li>R9s</li>
+                <li>R9s</li>
+            </ul>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs jixing">
+            <ul>
+                <li>推荐机型</li>
+                <li>R9s</li>
+                <li>R9s</li>
+                <li>R9s</li>
+                <li>R9s</li>
+            </ul>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs jixing">
+            <ul>
+                <li>推荐机型</li>
+                <li>R9s</li>
+                <li>R9s</li>
+                <li>R9s</li>
+                <li>R9s</li>
+            </ul>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 jixing">
+            <ul class="rexian">
+                <li class="tu"><img src="image/icon-online.png" alt=""></li>
+                <li class="haoma">4001-666-888</li>
+                <li class="rex">（24小时全国服务热线）</li>
+            </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid dibu">
+    <div class="container">
+      <div class="row">
+        
+        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+            <span>© 2005 - 2017 OPPO 版权所有 粤ICP备08130115号-1 联系方式：4001-666-888</span>
+            <span><img src="image/icon-identification.png" alt=""></span>
+        </div>
+        <div class="col-lg-2 col-md-2 hidden-sm hidden-xs">
+            
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 guanzhu">
+            <span>关注我们: </span>
+            <span><img src="image/wb.png" alt=""><img src="image/wb.png" alt=""><img src="image/wb.png" alt=""></span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="backtop"><img src="image/backtop-icon.png" alt=""></div>
+
+    <script type="text/javascript">
+        var oBox=document.querySelector('.lunbo .tubox .tu1>img');
+        var aBox=document.querySelector('.lunbo .tubox .tu2>img');
+        var rwdlink = document.getElementById("rwdlink");
+        var oXiaoren=document.querySelector('.toubu .container-fluid .container .navbar-header .navbar-brand');
+        var oWode=document.querySelector('.toubu .container-fluid .container .wode');
+        var oRen=document.querySelector('.toubu .container-fluid .container .navbar-header .navbar-brand img');
+ 
+　　　　setCSS();
+ 
+　　　　window.onresize = setCSS;
+ 
+　　　　function setCSS(){
+ 
+　　　　　　var windowWidth = document.documentElement.clientWidth;
+ 
+　　　　　　if(windowWidth <= 970){
+ 
+　　　　　　　　rwdlink.href = "css/bootstrap.min.css";
+                oBox.src="image/5.jpg";
+                aBox.src="image/6.jpg";
+
+
+                if(windowWidth <= 749){
+                rwdlink.href = "css/bootstrap.min.css";
+                oXiaoren.onclick=function(){
+                  oWode.style.display='block';
+                }
+                oXiaoren.onmouseout=function(){
+                  oWode.style.display='none';
+                }
+            }
+ 
+　　　　　　}else if(windowWidth > 970){
+　　　　　　　　rwdlink.href = "css/bootstrap.min.css";
+                oBox.src="image/2.jpg";
+                aBox.src="image/3.jpg";
+　　　　　　}
+　　　　}
+    </script>
+
+    <script type="text/javascript">
+        var oBtn=document.querySelector('.backtop');
+        var topBar=document.querySelector('.top_bar');
+        console.log(topBar)
+        var toubu=document.querySelector('.toubu');
+        var lunbo=document.querySelector('.lunbo');
+        var timer=null;
+        var target=0;
+        oBtn.onclick=function(){
+        var leader=document.body.scrollTop||document.documentElement.scrollTop||window.pageYOffset;
+        clearInterval(timer);
+        timer=setInterval(function(){
+          leader=leader+(target-leader)/10;
+              if(leader<=3){
+                clearInterval(timer);
+                leader=0;
+              }
+              window.scrollTo(0,leader);
+          },30);
+      }
+      window.onscroll=function(){
+        var h=document.body.scrollTop||document.documentElement.scrollTop||window.pageYOffset;
+        if(h>=(topBar.offsetHeight+toubu.offsetHeight)){
+          oBtn.style.display='block';
+        }else{
+          oBtn.style.display='none';
+        }
+      }
+    </script>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
